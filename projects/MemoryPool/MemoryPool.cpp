@@ -2,6 +2,14 @@
 
 #include"malloc.h"
 
+#ifdef _DEBUGPOOL
+
+#include<iostream>
+using namespace std;
+
+#endif // _DEBUGPOOL
+
+
 MemoryPool::MemoryPool(unsigned long ulBlockSize, unsigned long ulNumBlocks):m_ulBlockSize(ulBlockSize),m_ulNumBlocks(ulNumBlocks),m_ulAvaliableNumBlocks(m_ulNumBlocks),m_UnuseBlockHead(),m_UsedBlockHead()
 {
 
@@ -81,9 +89,20 @@ void* MemoryPool::Alloc(size_t size)
 		m_UsedBlockHead = pCur;
 	}
 
+
+#ifdef _DEBUGPOOL
+
+	cout << "Alloc form pool.." << endl;
+
+#endif // _DEBUGPOOL
+
+
 	//返回用户可以使用的数据段
 
 	return (void*)((char*)pCur + sizeof(Unit));
+
+
+
 
 }
 
@@ -137,6 +156,12 @@ void MemoryPool::DeAlloc(void* p)
 	}
 	
 	m_UnuseBlockHead = pCur;
+
+#ifdef _DEBUGPOOL
+
+	cout << "deAlloc form pool.." << endl;
+
+#endif // _DEBUGPOOL
 	
 }
 

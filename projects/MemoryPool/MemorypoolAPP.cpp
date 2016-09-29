@@ -1,9 +1,50 @@
 #include"MemoryPool.h"
 #include<iostream>
+#include<cassert>
+#include<Windows.h>
+#include"TestClass1.h"
+#include"TestClass2.h"
 using namespace std;
+
+
+MemoryPool* g_pMemoryPool = nullptr;
+
+#define TEST_COUNT 10000000
 
 int main()
 {
+
+	g_pMemoryPool = new MemoryPool(sizeof(TestClass1), 1024);
+
+	assert(g_pMemoryPool != nullptr);
+
+
+	
+	DWORD dwBeg = GetTickCount();
+
+	for (int i = 0; i < TEST_COUNT; ++i)
+	{
+		TestClass1* p = new TestClass1;    // form memorypool
+		if (p)
+			delete p; 
+	}
+
+	DWORD dwEnd = GetTickCount();
+	cout << "Alloc memory form pool total interval: " << dwEnd - dwBeg << " ms" << endl;
+
+	dwBeg = GetTickCount();
+
+	for (int i = 0; i < TEST_COUNT; ++i)
+	{
+		TestClass2* p = new TestClass2;    // form heap
+		if (p)
+			delete p;
+	}
+
+	dwEnd = GetTickCount();
+	cout << "Alloc memory form pool total interval: " << dwEnd - dwBeg << " ms" << endl;
+
+	/*
 	MemoryPool* pMempool = new MemoryPool(sizeof(double),10);
 	if (pMempool)
 	{
@@ -147,6 +188,8 @@ int main()
 
 		delete pMempool;
 	}
+
+	*/
 
 
 

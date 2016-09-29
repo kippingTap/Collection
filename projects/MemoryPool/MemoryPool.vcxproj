@@ -145,10 +145,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="TestClass1.h" />
+    <ClInclude Include="TestClass2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MemoryPool.cpp" />
     <ClCompile Include="MemorypoolAPP.cpp" />
+    <ClCompile Include="TestClass1.cpp" />
+    <ClCompile Include="TestClass2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
