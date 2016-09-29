@@ -1,0 +1,32 @@
+﻿   Assembling: match686.asm
+  Microsoft (R) Macro Assembler Version 14.00.24210.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+   Assembling: inffas32.asm
+  Microsoft (R) Macro Assembler Version 14.00.24210.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  ioapi.c
+  iowin32.c
+  trees.c
+  uncompr.c
+  unzip.c
+  zip.c
+  zutil.c
+  正在生成代码...
+.\zlibvc.def(4): warning LNK4017: //VERSION 语句不支持目标平台；已忽略
+    正在创建库 x86\ZlibDllDebug\zlibwapi.lib 和对象 x86\ZlibDllDebug\zlibwapi.exp
+  zlibvc.vcxproj -> C:\Users\yanshuyu\Documents\Visual Studio 2015\Projects\Collection\3party\zlib-1.2.8\contrib\vstudio\vc11\x86\ZlibDllDebug\zlibwapi.dll
+  zlibvc.vcxproj -> x86\ZlibDllDebug\zlibwapi.pdb (Full PDB)
