@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zlib", "projects\Zlib\Zlib.vcxproj", "{D0566120-2464-4CB2-916D-62C3A0C9539B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryPool", "MemoryPool\MemoryPool.vcxproj", "{5B4FCBDD-7B75-466F-9A0C-A722B7D86404}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryPool", "projects\MemoryPool\MemoryPool.vcxproj", "{5B4FCBDD-7B75-466F-9A0C-A722B7D86404}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
