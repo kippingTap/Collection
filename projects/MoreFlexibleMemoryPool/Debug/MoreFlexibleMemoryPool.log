@@ -1,0 +1,4 @@
+﻿  MoreFlexibleMomeryPoolApp.cpp
+e:\github\collection\projects\moreflexiblememorypool\moreflexiblemomerypoolapp.cpp(47): warning C4305: “=”: 从“double”到“float”截断
+  MoreFlexibleMemoryPool.vcxproj -> E:\gitHub\Collection\Debug\MoreFlexibleMemoryPool.exe
+  MoreFlexibleMemoryPool.vcxproj -> E:\gitHub\Collection\Debug\MoreFlexibleMemoryPool.pdb (Full PDB)

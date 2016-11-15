@@ -42,7 +42,7 @@ int main()
 	}
 
 	dwEnd = GetTickCount();
-	cout << "Alloc memory form pool total interval: " << dwEnd - dwBeg << " ms" << endl;
+	cout << "Alloc memory form heap total interval: " << dwEnd - dwBeg << " ms" << endl;
 
 	/*
 	MemoryPool* pMempool = new MemoryPool(sizeof(double),10);
