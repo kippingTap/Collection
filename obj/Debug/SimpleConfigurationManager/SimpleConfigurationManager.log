@@ -1,0 +1,7 @@
+﻿  main.cpp
+  ConfigurationFile.cpp
+e:\github\collection\projects\simpleconfigurationmanager\configurationfile.cpp(255): warning C4018: “<”: 有符号/无符号不匹配
+e:\github\collection\projects\simpleconfigurationmanager\configurationfile.cpp(259): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  SimpleConfigurationManager.vcxproj -> E:\gitHub\Collection\\bin\Debug\SimpleConfigurationManager\SimpleConfigurationManager.exe
+  SimpleConfigurationManager.vcxproj -> E:\gitHub\Collection\\bin\Debug\SimpleConfigurationManager\SimpleConfigurationManager.pdb (Full PDB)
